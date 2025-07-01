@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Vicentina Freire - Início</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: #181818;
+      color: #f3f3f3;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .home-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 92vh;
+      padding: 24px 10px 0 10px;
+    }
+
+    .home-logo {
+      width: 170px;
+      border-radius: 12px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 18px #0007;
+      background: #fff;
+    }
+
+    .home-title {
+      font-size: 2.5rem;
+      color: #B02A2A;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .home-desc {
+      color: #ffa500;
+      font-size: 1.17rem;
+      text-align: center;
+      margin-bottom: 35px;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    .portal-btn {
+      display: inline-block;
+      margin: 32px auto 0 auto;
+      background: #ffa500;
+      color: #181818;
+      font-weight: bold;
+      font-size: 1.3rem;
+      padding: 22px 58px;
+      border-radius: 28px;
+      text-decoration: none;
+      box-shadow: 0 2px 16px #ffa50044, 0 1px 6px #0005;
+      transition: background 0.18s, color 0.18s;
+      border: none;
+    }
+
+    .portal-btn:hover,
+    .portal-btn:focus {
+      background: #fff;
+      color: #ffa500;
+      border: 2px solid #ffa500;
+    }
+
+    .acesso-rapido {
+      margin-top: 40px;
+      font-size: 1.08rem;
+      color: #ffd699;
+      text-align: center;
+    }
+
+    .home-actions {
+      display: flex;
+      gap: 24px;
+      margin-top: 16px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .home-actions a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      color: #fff;
+      background: #ffa500;
+      border-radius: 22px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px #0005;
+      transition: background 0.2s, color 0.2s;
+      border: none;
+    }
+
+    .home-actions a:hover {
+      background: #fff;
+      color: #ffa500;
+      border: 2px solid #ffa500;
+    }
+
+    .home-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background: #222;
+      color: #ffd699;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.98rem;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .home-actions {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+      }
+
+      .home-actions a,
+      .portal-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .home-container {
+        padding-top: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="home-container">
+    <img src="imagem/logo.webp" alt="Logo Vicentina Freire" class="home-logo">
+
+    <h1 class="home-title">Universidade Particular Vicentina Freire</h1>
+
+    <div class="home-desc">
+      Bem-vindo ao portal acadêmico! Clique abaixo para acessar o sistema de gestão de cursos e alunos.<br>
+      Transformando vidas pelo conhecimento desde 1985.
+    </div>
+
+    <a href="htmls/" class="portal-btn">Acessar o Portal</a>
+
+    <div class="acesso-rapido">
+      Ou acesse diretamente:
+    </div>
+    <div class="home-actions">
+      <a href="htmls/admin.html">Administrar Cursos/Alunos</a>
+      <a href="htmls/alunos.html">Ver Perfil de Aluno</a>
+    </div>
+  </div>
+  <div class="home-footer">
+    &copy; 2025 Vicentina Freire &middot; Contato: contato@vicentina.edu.br
+  </div>
+</body>
+
+</html>
