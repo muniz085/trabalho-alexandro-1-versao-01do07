@@ -30,7 +30,7 @@ Atende ao teste prático com **HTML**, **CSS**, **JavaScript** e **JSON Server**
 
 * HTML5
 * CSS3
-* JavaScript (ES6)
+* JavaScript 
 * JSON Server
 
 ---
