@@ -1,4 +1,3 @@
-
 {
   "cursos": [
     {
@@ -28,6 +27,7 @@
       "id": 1,
       "nome": "João Silva",
       "cpf": "12345678900",
+      "email": "joao@teste.com",
       "dataNascimento": "2000-01-01",
       "cursoId": 1
     },
@@ -35,6 +35,7 @@
       "id": 2,
       "nome": "Maria Oliveira",
       "cpf": "98765432100",
+      "email": "maria@teste.com",
       "dataNascimento": "1999-07-15",
       "cursoId": 2
     },
@@ -42,8 +43,17 @@
       "id": 3,
       "nome": "Carlos Souza",
       "cpf": "11122233344",
+      "email": "carlos@teste.com",
       "dataNascimento": "2001-03-10",
       "cursoId": 3
+    },
+    {
+      "id": 4,
+      "nome": "Ana Paula",
+      "cpf": "22233344455",
+      "email": "ana@teste.com",
+      "dataNascimento": "2002-09-23",
+      "cursoId": 1
     }
   ]
 }
