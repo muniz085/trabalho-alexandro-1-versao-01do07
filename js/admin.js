@@ -7,7 +7,7 @@ function mostrarSecao(secao) {
 
 // ===== CURSOS =====
 function carregarCursos() {
-  fetch('http://localhost:3000/cursos')
+  fetch('https://6855d3c31789e182b37c69eb.mockapi.io/api/v1/cursos')
     .then(res => res.json())
     .then(cursos => {
       const section = document.getElementById('cursosSection');
@@ -51,13 +51,17 @@ function mostrarFormularioCurso(curso = null) {
     <input type="hidden" id="cursoId" value="${curso ? curso.id : ''}">
     <input type="text" id="cursoNome" placeholder="Nome" value="${curso?.nome || ''}">
     <input type="text" id="cursoDescricao" placeholder="Descrição" value="${curso?.descricao || ''}">
-    <input type="text" id="cursoCarga" placeholder="Carga Horária" value="${curso?.cargaHoraria
+    <input type="text" id="cursoCarga" placeholder="Carga Horária" value="${curso?.cargaHoraria || ''}">
+    <button onclick="salvarCurso()">Salvar</button>
+    <button onclick="document.getElementById('formCurso').style.display='none'">Cancelar</button>
+  `;
+}
 
 
 
 // ===== ALUNOS =====
 function carregarAlunos() {
-  fetch('http://localhost:3000/alunos')
+  fetch('https://6855d3c31789e182b37c69eb.mockapi.io/api/:endpoint/v1/alunos')
     .then(res => res.json())
     .then(alunos => {
       const section = document.getElementById('alunosSection');
